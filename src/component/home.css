@@ -1,0 +1,28 @@
+.main{
+
+display: flex;
+
+
+}
+
+.img1:hover{
+
+    border: 2px solid rgb(31, 182, 162);
+}
+.img1{
+background-position: center;
+    border: 2px solid rgb(11, 96, 82)
+}
+.img2:hover{
+color: black;
+}
+.img2{
+
+}
+
+
+
+.bg{
+background-color: blue;
+    background-image: url("a23.jpg");
+}
