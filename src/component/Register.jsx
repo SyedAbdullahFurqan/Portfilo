@@ -1,14 +1,12 @@
 
 
 import React, { useEffect, useState } from 'react'
-import { useAuth } from './content/Auth'
+// import { useAuth } from './content/Auth'
 
 export const Register = () => {
 
   const [Inputs, setInputs] = useState({name:'',email:"",message:""})
-const {Nama,Res}=useAuth()
-
-console.log(Res)
+// const {Nama,Res}=useAuth()
 
 function handle(e) {
     setInputs({
@@ -56,16 +54,16 @@ setInputs({
 
 
   // ✅ Run only when Res changes
-  useEffect(() => {
-    if (True && Res) {
-      setInputs({
-        name: Res.msg.name,
-        email: Res.msg.email,
-        message: ""
-      });
-      setTrue(false); // prevent resetting every time
-    }
-  }, [Res, True]);
+  // useEffect(() => {
+  //   if (True && Res) {
+  //     setInputs({
+  //       name: Res.msg.name,
+  //       email: Res.msg.email,
+  //       message: ""
+  //     });
+  //     setTrue(false); // prevent resetting every time
+  //   }
+  // }, [Res, True]);
 
   return (
     <div>

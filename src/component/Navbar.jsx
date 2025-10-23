@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import {Link, NavLink} from 'react-router-dom'
-import { useAuth } from './content/Auth';
+
 function Navbar() {
- const {isLogin,Nama,Res}= useAuth()
+
     const [Change, setChange] = useState("");
 
 console.log(Change)
-console.log( "my name" ,Nama)
 
 
 const [file, setImges] = useState("");

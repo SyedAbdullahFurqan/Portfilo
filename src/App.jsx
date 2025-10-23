@@ -5,66 +5,18 @@ import './App.css'
 import Navbar from './component/Navbar' 
 import { createBrowserRouter , RouterProvider } from "react-router-dom";
   import About from './component/About'
-import Contact from './component/Contact'
+// import Contact from './component/Contact'
 import Home from './component/Home'
 import Sample from './component/Sample'
 import Nested from './component/Nested'
 import { Register } from './component/Register'
 
-import Login from './component/Login'
-import { Logout } from './component/Logout';
+// import Login from './component/Login'
+// import { Logout } from './component/Logout';
 import Project from './component/Project';
 import {Myself} from './component/Myself';
 
 function App() {
-const [alert, setalert] = useState("");
-  const [count, setCount] = useState("furan")
-const [changes, setchanges] = useState(false);
-function hand(e) {
-  setCount(e.target.value)
-}
-
-function upper() {
-let news=count.toUpperCase()
-
-setCount(news)
-setchanges(true)
- setTimeout(() => {
-  setchanges(null)
- }, 2000);
-setalert("convet into uppercase")
-}
-function lower() {
- let news=count.toLowerCase()
-setCount(news)
-setchanges(true)
- setTimeout(() => {
-  setchanges(null)
- }, 2000);
-setalert("convet into Lowercase")
-}
-function clear(s) {
- setCount("")
- setchanges(true)
-  
- setalert("clearr")
- setTimeout(() => {
-  setchanges(null)
- }, 2000);
-}
-function copy(params) {
-  let copied=document.getElementById("area")
-copied.select()
-navigator.clipboard.writeText(copied.value)
-setchanges(true)
- setTimeout(() => {
-  setchanges(null)
- }, 2000);
- setalert("copy")
-}
-
-
-
 
 
 const router= createBrowserRouter([
@@ -72,25 +24,7 @@ const router= createBrowserRouter([
 
      element: <> <Navbar />  <Project/> </> 
       },  
-   {path:"/About",
-
-     element: <> <Navbar /> <About size={5} cate={"entertainment"} /> </> 
-      },
-      
-      {path:"/About/edu",
-
-     element: <> <Navbar /><About size={5} cate={"general"} /> </> 
-      },
-  {path:"/About/buss",
-
-     element: <> <Navbar /> <About size={5} cate={"technology"} /> </> 
-      },
   
-   {path:"/reigster",
-
-     element: <> <Navbar /><Contact/> </> 
-      },
-
    {path:"/Skill",
 
      element: <> <Navbar /> <Home/>  </> 
@@ -110,17 +44,6 @@ element: <> <Navbar /> <Register/>  </>
 },
 
       
-{path:"/login",
-
-
-element: <> <Navbar /> <Login/> </> 
-},
-      
-{path:"/logout",
-
-
-element: <> <Navbar /> <Logout/> </> 
-}
 ])
 
 
