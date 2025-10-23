@@ -1,6 +1,7 @@
 
 
 import React, { useEffect, useState } from 'react'
+import { toast } from 'react-toastify';
 // import { useAuth } from './content/Auth'
 
 export const Register = () => {
@@ -42,7 +43,7 @@ const contactsd=  fetch("http://localhost:3000/contact",
 contactsd.then(response => response.json()).then( data => console.log(data))
   
 
-
+toast.success("information is send")
 
 setInputs({
     name:"",
@@ -102,9 +103,9 @@ setInputs({
 <div className=' bg-gray-600 w-full h-screen justify-center '>
 
 <div className=' text-center mt-10'>
-<h1>Contact us </h1>
+<h1 className='pt-4 text-white'>Contact us </h1>
 
-<h3 className='mt-10'>Welcome back. Please enter your details.</h3>
+<h3 className='mt-10 text-white'>Welcome back. Please enter your details.</h3>
 </div>
 
 <form  onSubmit={contacts} className='px-6 py-5 text-center  '>
@@ -119,9 +120,9 @@ setInputs({
 
 <div className='my-3 md:w-90  text-amber-50'>Message</div>
 
-<textarea name="message" id="" rows={5} cols={30} className='bg-white w-50' value={Inputs.message} onChange={handle}></textarea>
+<textarea name="message" id="" rows={5} cols={30} className='bg-white w-55' value={Inputs.message} onChange={handle}></textarea>
 <br />
-<button type="submit" className='md:w-70 sm:w-60 w-50'>Contact</button>
+<button type="submit" className='md:w-70 sm:w-60 w-50 cursor-pointer'>Contact</button>
 </form>
 
 </div>
