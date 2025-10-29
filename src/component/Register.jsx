@@ -71,7 +71,7 @@ setInputs({
 
 
 
-    <div className='grid grid-cols-2 w-full h-full'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 w-full h-full'>
    
 
 
@@ -102,7 +102,7 @@ setInputs({
 
 <div className=' bg-gray-600 w-full h-screen justify-center '>
 
-<div className=' text-center mt-10'>
+<div className=' text-center '>
 <h1 className='pt-4 text-white'>Contact us </h1>
 
 <h3 className='mt-10 text-white'>Welcome back. Please enter your details.</h3>
@@ -112,15 +112,15 @@ setInputs({
 
 
 <div className='my-3 md:w-90 text-amber-50'>Name</div>
-<input type="text" name='name' className='md:w-70  sm:w-60 w-50' value={Inputs.name } onChange={handle} />
+<input type="text" name='name' className='md:w-70  sm:w-60 w-50' required value={Inputs.name } onChange={handle} />
 
 <div className='my-3 md:w-90 text-amber-50'>Email</div>
-<input type="email" name='email' className='md:w-70  sm:w-60 w-50' value={Inputs.email } onChange={handle}/>
+<input type="email" name='email' className='md:w-70  sm:w-60 w-50' required  value={Inputs.email } onChange={handle}/>
 
 
 <div className='my-3 md:w-90  text-amber-50'>Message</div>
 
-<textarea name="message" id="" rows={5} cols={30} className='bg-white w-55' value={Inputs.message} onChange={handle}></textarea>
+<textarea name="message" id="" required  rows={5} cols={30} className='bg-white w-55' value={Inputs.message} onChange={handle}></textarea>
 <br />
 <button type="submit" className='md:w-70 sm:w-60 w-50 cursor-pointer'>Contact</button>
 </form>

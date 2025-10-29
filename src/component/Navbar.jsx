@@ -33,7 +33,7 @@ return{color:isActive ?"white":"Lightblue",textDecoration:"none"}
         } } >Portfolio</NavLink></h1>
           </div>
 
-    <ul className=' flex gap-3 mx-5 py-3 '>
+    <ul className='text-[13px] sm:text-[20px] flex gap-3 mx-5 py-3 '>
 
        <li> 
     <NavLink  to={"/"}   style={({isActive})=>{

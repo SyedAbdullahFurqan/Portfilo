@@ -45,22 +45,22 @@ const Project = () => {
       viewport={{ once: false, amount: 0.3 }} className=' scroll-section grid grid-cols-2 w-full h-full'>
 
     <div className=' w-full h-screen flex flex-col justify-center px-6'>
-<h4 className='text-cyan-300'> Welcome To Website </h4>
+<h4 className='text-cyan-300 text-lg sm:text-xl text-[11px] font-semibold'> Welcome To Website </h4>
 
-<h1 className='text-3xl font-medium font-sans uppercase my-4 text-white'>I am Furqan <span className='text-cyan-300'>AND ALSO WEB DEVELOPER</span> </h1>
+<h1 className=' font-medium font-sans w-100 text-[11px] sm:text-lg  uppercase my-4 text-white'>I am Furqan <span className='text-cyan-300'>AND ALSO WEB DEVELOPER</span> </h1>
 
-<p className='uppercase my-4 w-50 sm:w-100  text-white p-5'>This website is all about Website Development, Technical, Tips and Tricks, Designs Principle, Source Code sales and Programming videos in the Hindi Language.</p>
+<p className='uppercase my-t w-44 sm:w-100 text-[15px] sm:text-lg   text-white p-5'>This website is all about Website Development, Technical, Tips and Tricks, Designs Principle, Source Code sales and Programming videos in the Hindi Language.</p>
   
   <div className='flex '>
    <NavLink to={"/Skill"}>
-   <button className='w-40  cursor-pointer hover:bg-cyan-400 hover:text-black'>See My Work   </button></NavLink>
+   <button className='w-30 sm:w-40 text-[13px] sm:text-[16px] cursor-pointer hover:bg-cyan-400 hover:text-black'>See My Work   </button></NavLink>
       <NavLink to={"/Skill"}>
-   <button className='w-40 mx-2 cursor-pointer hover:bg-cyan-400 hover:text-black'>Download CV   </button></NavLink>
+   <button className='w-30 sm:w-40 text-[13px] sm:text-[16px] mx-2 cursor-pointer hover:bg-cyan-400 hover:text-black'>Download CV   </button></NavLink>
    </div>
     </div>
 
     <div className='w-full h-screen flex justify-center items-center fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500  '>
-<img src="furqan.jpg" className='sm:w-1/2 sm:h-60 md:w-1/2 md:h-70 lg:w-1/2 lg:h-100   rounded-full  bg-amber-100 fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500 '  />
+<img src="furqan.jpg" className='w-[70%] ms-2    sm:w-1/2 sm:h-60 md:w-1/2 md:h-70 lg:w-1/2 lg:h-100   rounded-full  bg-amber-100 fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500 '  />
 
     </div>
 </motion.div>
@@ -75,24 +75,24 @@ const Project = () => {
       viewport={{ once: false, amount: 0.3 }} className='grid grid-cols-2 scroll-section '>
 
     <div className='mx-5 text-black'>
-<h4 className=' text-cyan-300 text-3xl '>About Me</h4>
+<h4 className=' text-cyan-300 text-2xl '>About Me</h4>
 
 
 
-<p className=' text-gray-300 my-8 py-5  font-medium font-sans uppercase  sm:w-90'>This website is all about Website Development, Technical, Tips and Tricks, Designs Principle, Source Code sales and Programming videos in the Hindi Language.</p>
+<p className=' text-gray-300 my-8 py-5 text-sm sm:text-[20px] lg:text-[25px] font-medium font-sans uppercase  sm:w-90'>This website is all about Website Development, Technical, Tips and Tricks, Designs Principle, Source Code sales and Programming videos in the Hindi Language.</p>
   <div className='flex '>
     <div className='flex my-3 mx-3'>
   <h1 className='text-amber-50 uppercase'>Follow me on : </h1></div>
-   <div className='text-[36px] pt-2  text-center text-cyan-300 border-2 border-cyan-300 rounded-3xl w-15 h-14 cursor-pointer hover:bg-cyan-400 hover:text-black hover:border-black'>
+   <div className='lg:text-[36px] lg:w-15 lg:h-14  sm:text-[29px] sm:w-14 sm:h-13 text-3xl h-14 pt-2  text-center text-cyan-300 border-2 border-cyan-300 rounded-3xl  cursor-pointer hover:bg-cyan-400 hover:text-black hover:border-black'>
 <FaFacebook  className=' w-10 m-auto'   />
   </div>
   
   
-   <div className='text-[36px] pt-2  mx-3 text-center text-cyan-300 border-2 border-cyan-300 rounded-3xl w-15 h-14 cursor-pointer hover:bg-cyan-400 hover:text-black hover:border-black'>
+   <div className='lg:text-[36px] lg:w-15 lg:h-14  sm:text-[29px] sm:w-14 sm:h-13 text-3xl  pt-2  mx-3 text-center text-cyan-300 border-2 border-cyan-300 rounded-3xl w-15 h-14 cursor-pointer hover:bg-cyan-400 hover:text-black hover:border-black'>
 <FaInstagram  className=' w-10 m-auto'   />
   </div>
   
-   <div className='text-[36px] pt-2  text-center text-cyan-300 border-2 border-cyan-300 rounded-3xl w-15 h-14 cursor-pointer hover:bg-cyan-400 hover:text-black hover:border-black'>
+   <div className='lg:text-[36px] lg:w-15 lg:h-14  sm:text-[29px] sm:w-14 sm:h-13 text-3xl  pt-2  text-center text-cyan-300 border-2 border-cyan-300 rounded-3xl w-15 h-14 cursor-pointer hover:bg-cyan-400 hover:text-black hover:border-black'>
 <FaGithub  className=' w-10 m-auto'   />
   </div>
   
@@ -103,8 +103,8 @@ const Project = () => {
   
     </div>
 
-    <div className='fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500  place-items-center-safe mt-3 object-cover'>
-<img src="furqan.jpg" className=' sm:w-1/2 sm:h-60 md:w-1/2 md:h-70 lg:w-1/2 lg:h-100      fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500   rounded-full '  />
+    <div className='fill-cyan-500 px-4 mx-3 drop-shadow-lg drop-shadow-cyan-500  place-items-center-safe place-content-center mt-3 object-cover'>
+<img src="furqan.jpg" className='w-full sm:w-1/2 sm:h-60 md:w-1/2 md:h-70 lg:w-1/2 lg:h-100      fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500   rounded-full '  />
 
     </div>
 </motion.div>
@@ -201,7 +201,7 @@ const Project = () => {
     {/* Left Side */}
     <div>
       <span className="text-cyan-300">Service</span>
-      <h1 className="text-4xl mt-4 text-white">What I do</h1>
+      <h1 className="text-2xl mt-4 text-white">What I do</h1>
       <p className="service text-lg mt-6 text-white">
         We offer comprehensive digital services including web design, UI/UX design, app development, and web development. Our expertise spans visually captivating websites, intuitive user interfaces, feature-rich mobile apps, and tailored web solutions.
       </p>
@@ -247,12 +247,12 @@ const Project = () => {
 
     <div className="border-2 hover:bg-cyan-500 border-blue-400 rounded-3xl w-full h-fit transform scale-100 hover:scale-110 transition-all duration-300">
       <img src="bootstrap-5-logo-icon.png" className="h-32 mx-auto p-4" alt="Bootstrap" />
-      <h2 className="mb-6 py-5 text-2xl md:text-3xl text-center text-white">BOOTSTRAP</h2>
+      <h2 className="mb-6 py-5 text-[20px] sm:text-3xl text-center text-white">BOOTSTRAP</h2>
     </div>
 
     <div className="border-2 hover:bg-cyan-500 border-blue-400 rounded-3xl w-full h-fit transform scale-100 hover:scale-110 transition-all duration-300">
       <img src="react.png" className="h-32 mx-auto p-4" alt="JavaScript" />
-      <h2 className="mb-6 py-5 text-2xl md:text-3xl text-center text-white">JAVASCRIPT</h2>
+      <h2 className="mb-6 py-5 text-[20px] sm:text-3xl text-center text-white">JAVASCRIPT</h2>
     </div>
   </motion.div>
 </section>
