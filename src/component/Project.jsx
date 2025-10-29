@@ -6,6 +6,13 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { FaFacebook } from "react-icons/fa";
+import  css from   "../assets/css-icon.png"
+import  js from   "../assets/js.png"
+import  html from   "../assets/html-icon.png"
+import  tailwind from   "../assets/tailwind-css-icon.png"
+import  bootstrap from   "../assets/bootstrap-5-logo-icon.png"
+import furqan from   "../assets/furqan.jpg"
+import react from   "../assets/react.png"
 
   import { animate, inView ,stagger} from "https://cdn.jsdelivr.net/npm/motion@12.23.12/+esm"
 
@@ -60,7 +67,7 @@ const Project = () => {
     </div>
 
     <div className='w-full h-screen flex justify-center items-center fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500  '>
-<img src="furqan.jpg" className='w-[70%] ms-2    sm:w-1/2 sm:h-60 md:w-1/2 md:h-70 lg:w-1/2 lg:h-100   rounded-full  bg-amber-100 fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500 '  />
+<img src={furqan} className='w-[70%] ms-2    sm:w-1/2 sm:h-60 md:w-1/2 md:h-70 lg:w-1/2 lg:h-100   rounded-full  bg-amber-100 fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500 '  />
 
     </div>
 </motion.div>
@@ -104,7 +111,7 @@ const Project = () => {
     </div>
 
     <div className='fill-cyan-500 px-4 mx-3 drop-shadow-lg drop-shadow-cyan-500  place-items-center-safe place-content-center mt-3 object-cover'>
-<img src="furqan.jpg" className='w-full sm:w-1/2 sm:h-60 md:w-1/2 md:h-70 lg:w-1/2 lg:h-100      fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500   rounded-full '  />
+<img src={furqan} className='w-full sm:w-1/2 sm:h-60 md:w-1/2 md:h-70 lg:w-1/2 lg:h-100      fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500   rounded-full '  />
 
     </div>
 </motion.div>
@@ -219,6 +226,8 @@ const Project = () => {
   {/* Skills Heading */}
   <span className="text-center text-3xl my-10 text-cyan-300 exam ">My Skills</span>
 
+
+
   {/* Skills Grid */}
   <motion.div  initial={{ y: -100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}  
@@ -226,32 +235,32 @@ const Project = () => {
       viewport={{ once: false, amount: 0.3 }} className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 place-items-center exam  ">
     {/* Card */}
     <div className="example    border-2 hover:bg-cyan-500 border-blue-400 rounded-3xl w-full h-fit transform scale-100 hover:scale-110 transition-all duration-300">
-      <img src="css-icon.png" className="h-32 mx-auto p-4" alt="CSS" />
+      <img src={css} className="h-32 mx-auto p-4" alt="CSS" />
       <h2 className="mb-6 py-5 text-2xl md:text-3xl text-center text-white">CSS</h2>
     </div>
 
     <div className="border-2 hover:bg-cyan-500 border-blue-400 rounded-3xl w-full h-fit transform scale-100 hover:scale-110 transition-all duration-300">
-      <img src="html-icon.png" className="h-32 mx-auto p-4" alt="HTML" />
+      <img src={html} className="h-32 mx-auto p-4" alt="HTML" />
       <h2 className="mb-6 py-5 text-2xl md:text-3xl text-center text-white">HTML</h2>
     </div>
 
     <div className="border-2 hover:bg-cyan-500 border-blue-400 rounded-3xl w-full h-fit transform scale-100 hover:scale-110 transition-all duration-300">
-      <img src="js.png" className="h-32 mx-auto p-4" alt="React" />
+      <img src={react} className="h-32 mx-auto p-4" alt="React" />
       <h2 className="mb-6 py-5 text-2xl md:text-3xl text-center text-white">REACT</h2>
     </div>
 
     <div className="border-2 hover:bg-cyan-500 border-blue-400 rounded-3xl w-full h-fit transform scale-100 hover:scale-110 transition-all duration-300">
-      <img src="tailwind-css-icon.png" className="h-32 mx-auto p-4" alt="Tailwind" />
+      <img src={tailwind} className="h-32 mx-auto p-4" alt="Tailwind" />
       <h2 className="mb-6 py-5 text-2xl md:text-3xl text-center text-white">TAILWIND</h2>
     </div>
 
     <div className="border-2 hover:bg-cyan-500 border-blue-400 rounded-3xl w-full h-fit transform scale-100 hover:scale-110 transition-all duration-300">
-      <img src="bootstrap-5-logo-icon.png" className="h-32 mx-auto p-4" alt="Bootstrap" />
+      <img src={bootstrap} className="h-32 mx-auto p-4" alt="Bootstrap" />
       <h2 className="mb-6 py-5 text-[20px] sm:text-3xl text-center text-white">BOOTSTRAP</h2>
     </div>
 
     <div className="border-2 hover:bg-cyan-500 border-blue-400 rounded-3xl w-full h-fit transform scale-100 hover:scale-110 transition-all duration-300">
-      <img src="react.png" className="h-32 mx-auto p-4" alt="JavaScript" />
+      <img src={js} className="h-32 mx-auto p-4" alt="JavaScript" />
       <h2 className="mb-6 py-5 text-[20px] sm:text-3xl text-center text-white">JAVASCRIPT</h2>
     </div>
   </motion.div>

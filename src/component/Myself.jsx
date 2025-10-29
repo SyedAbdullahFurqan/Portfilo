@@ -1,5 +1,9 @@
 import React from 'react'
 import "./home.css"
+import furqan from   "../assets/furqan.jpg"
+
+import ecommerce  from   "../assets/ecoome.jpg"
+
  export  const Myself = () => {
   return (
     <div className='bg-gray-700'>
@@ -33,7 +37,7 @@ import "./home.css"
 
     <div className="my-8 flex justify-center">
       <img
-        src="furqan.jpg"
+        src={furqan}
         alt="Furqan"
         className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-cover shadow-lg shadow-cyan-500/50"
       />
