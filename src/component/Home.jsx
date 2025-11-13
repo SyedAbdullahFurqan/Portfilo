@@ -47,7 +47,7 @@ function Home() {
       <p className="text-gray-300">
         Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem?
       </p>
- <Link  to="https://syedabdullahfurqan.github.io/Todo-App/" target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
+ <Link  to="https://syedabdullahfurqan.github.io/Todo-App/" target="_blank"><button className='uppercase rounded-4xl w-full m-auto text-center p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
     </div>
    <div className="mx-5 my-5 border-2 p-5   border-gray-600 rounded-3xl">
         <img src={movie} className="w-70 md:w-90 sm:w-80  rounded-3xl m-auto h-48" alt="Quiz App" />
@@ -56,7 +56,7 @@ function Home() {
       <p className="text-gray-300">
         Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem?
       </p>
- <Link  to="https://movie-website-furqan.netlify.app/" target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
+ <Link  to="https://movie-website-furqan.netlify.app/" target="_blank"><button className='uppercase rounded-4xl w-full m-auto text-center  p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
     </div>
    <div className="mx-5 my-5 border-2 p-5 border-gray-600 rounded-3xl">
         <img src={e} className="w-70 md:w-90 sm:w-80  rounded-3xl m-auto h-48" alt="Quiz App" />
@@ -65,7 +65,7 @@ function Home() {
       <p className="text-gray-300">
         Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem?
       </p>
-       <Link  to="https://e-commerce-furqan.netlify.app/" target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
+       <Link  to="https://e-commerce-furqan.netlify.app/" target="_blank"><button className='uppercase w-full m-auto text-center rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
     </div>
  
 
@@ -105,7 +105,7 @@ function Home() {
       <p className="text-gray-300">
         Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem?
       </p>
-       <Link  to="https://syedabdullahfurqan.github.io/Calcutor/ " target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
+       <Link  to="https://syedabdullahfurqan.github.io/Calcutor/ " target="_blank"><button className='uppercase rounded-4xl p-3 w-full m-auto text-center mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
     </div>
    <div className="mx-5 my-5 border-2 p-5   border-gray-600 rounded-3xl">
         <img src={quiz} className="w-70 md:w-90 sm:w-80  rounded-3xl m-auto h-48" alt="Quiz App" />
@@ -114,7 +114,7 @@ function Home() {
       <p className="text-gray-300">
         Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem?
       </p>
-        <Link  to="http://syedabdullahfurqan.github.io/Quiz-App/" target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
+        <Link  to="http://syedabdullahfurqan.github.io/Quiz-App/" target="_blank"><button className='uppercase rounded-4xl p-3 w-full m-auto text-center mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
     </div>
    <div className="mx-5 my-5 border-2 p-5 border-gray-600 rounded-3xl">
         <img src={coff} className="w-70 md:w-90 sm:w-80  rounded-3xl m-auto h-48" alt="Quiz App" />
@@ -123,7 +123,7 @@ function Home() {
       <p className="text-gray-300">
         Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem?
       </p>
-       <Link  to="https://syedabdullahfurqan.github.io/coffe-shop" target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
+       <Link  to="https://syedabdullahfurqan.github.io/coffe-shop" target="_blank"><button className='uppercase rounded-4xl p-3 w-full m-auto text-center mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
     </div>
    
    <div className="mx-5 my-5 border-2 p-5 border-gray-600 rounded-3xl">
@@ -133,7 +133,7 @@ function Home() {
       <p className="text-gray-300">
         Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem?
       </p>
-       <Link  to="https://syedabdullahfurqan.github.io/Tic-toe/" target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
+       <Link  to="https://syedabdullahfurqan.github.io/Tic-toe/" target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 w-full m-auto text-center cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
     </div>
    
   <div className="mx-5 my-5 border-2 p-5 border-gray-600 rounded-3xl">
@@ -143,7 +143,7 @@ function Home() {
       <p className="text-gray-300">
         Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, dolorem?
       </p>
-       <Link  to="https://syedabdullahfurqan.github.io/Porfolio/" target="_blank"><button className='uppercase rounded-4xl p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
+       <Link  to="https://syedabdullahfurqan.github.io/Porfolio/" target="_blank"><button className='uppercase rounded-4xl w-full m-auto text-center p-3 mt-4 cursor-pointer hover:bg-white hover:text-black'>see my project</button></Link> 
     </div>
    
  

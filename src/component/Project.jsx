@@ -13,7 +13,7 @@ import  tailwind from   "../assets/tailwind-css-icon.png"
 import  bootstrap from   "../assets/bootstrap-5-logo-icon.png"
 import furqan from   "../assets/furqan.jpg"
 import react from   "../assets/react.png"
-
+import pdf from "../public/Abdullah-Furqan-FlowCV-Resume-20251109 (1).pdf"
   import { animate, inView ,stagger} from "https://cdn.jsdelivr.net/npm/motion@12.23.12/+esm"
 
 const Project = () => {
@@ -58,11 +58,12 @@ const Project = () => {
 
 <p className='uppercase my-t w-44 sm:w-100 text-[15px] sm:text-lg   text-white p-5'>This website is all about Website Development, Technical, Tips and Tricks, Designs Principle, Source Code sales and Programming videos in the Hindi Language.</p>
   
-  <div className='flex '>
+  <div className=' '>
    <NavLink to={"/Skill"}>
-   <button className='w-30 sm:w-40 text-[13px] sm:text-[16px] cursor-pointer hover:bg-cyan-400 hover:text-black'>See My Work   </button></NavLink>
-      <NavLink to={"/Skill"}>
-   <button className='w-30 sm:w-40 text-[13px] sm:text-[16px] mx-2 cursor-pointer hover:bg-cyan-400 hover:text-black'>Download CV   </button></NavLink>
+   <button className='w-30 sm:w-40 text-[13px] sm:text-[16px]  border-2 border-amber-50 cursor-pointer hover:bg-cyan-400 hover:text-black'>See My Work   </button></NavLink>
+
+ <button className='w-30 sm:w-40 text-[13px] sm:text-[16px] mx-3 my-2 border-2 border-amber-50 cursor-pointer hover:bg-cyan-400 hover:text-black'> <a href={pdf}  target="_blank">Download CV</a>
+</button>
    </div>
     </div>
 
