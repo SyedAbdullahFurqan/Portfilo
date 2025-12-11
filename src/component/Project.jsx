@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Register } from './Register'
-import { Navigate, NavLink, useNavigate } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 
-import { FaFacebook } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion"
 import furqan from   "../assets/furqan.jpg"
 
@@ -14,6 +14,7 @@ import pdf from "../public/Abdullah-Furqan-FlowCV-Resume-20251109 (1).pdf"
 
 import "./about.css"
 import Home from './Home.jsx';
+import Footer from './Footer.jsx';
 
 const Project = () => {
 //     inView(".scroll-section ", (element) => {
@@ -51,20 +52,22 @@ const Project = () => {
       viewport={{ once: false, amount: 0.3 }} className=' scroll-section grid  grid-cols-1 sm:grid-cols-2 w-full h-full'>
 
     <div className=' w-full h-screen flex flex-col justify-center px-6 order-2 sm:order-1'>
-<h4 className='uppercase text-white text-lg sm:text-4xl text-[18px] font-mono font-bold pb-3'> hi, <span className='text-cyan-300'>I am Furqan </span> </h4>
+<h4 className='uppercase text-white text-lg sm:text-4xl text-[18px] font-mono font-bold pb-3'> hi, <span className='text-cyan-300'>I am Abdullah Furqan </span> </h4>
 
 <h1 className=' text-cyan-500  w-100 text-[16px] sm:text-lg  uppercase font-medium   '>full stack web developer </h1>
 <img src={furqan} className='w-30 mt-5 block sm:hidden      rounded-full  bg-amber-100 fill-cyan-500 drop-shadow-lg drop-shadow-cyan-500 '  />
 
-<p className='capitalize  w-fit sm:w-full text-[15px] sm:text-lg  mt-2 text-white p-3'>I’m a passionate FullStack Developer built Website and learn modern web technologies. I enjoy building responsive, user-friendly web applications and continuously learning about new frameworks and design patterns Looking forward to contributing to dynamic software teams.</p>
+  
+<p className='capitalize  w-fit sm:w-full text-[15px] sm:text-lg  mt-2 text-white p-3'>Full Stack Developer specializing in React, Node.js, Express, MongoDB, and modern UI/UX. I build fast, scalable, user-friendly web apps with clean code and strong problem-solving.
+</p>
  <div class="socail ">
  
-<a href="#"><FaFacebook  className='m-auto  '   /></a>
+<a href="https://www.instagram.com/furqan_615/" target='_blank'><FaInstagram   className='m-auto  '   /></a>
 
-  <a href="#"><FaInstagram  className=' m-auto'   /></a>
 
+ <a href="https://www.linkedin.com/in/furqan-ali-051195382/" target='_blank'><FaLinkedin  className='m-auto'   /></a>
   
-  <a href="#"><FaGithub  className='m-auto'   /></a>
+  <a href="https://github.com/SyedAbdullahFurqan" target='_blank'><FaGithub  className='m-auto'   /></a>
 
   
 
@@ -75,11 +78,11 @@ const Project = () => {
 
 
     
-  <div className=' '>
+  <div className='mt-2 '>
    <NavLink to={"/Skill"}>
-   <button className='w-30 sm:w-fit text-[13px] sm:text-[16px] m-2 p-3 border-2 border-amber-50 cursor-pointer hover:bg-cyan-400 hover:text-black'>See My Work   </button></NavLink>
+   <button className=' capitalize  w-30 sm:w-fit text-[13px] sm:text-[14px] m-2 px-3 py-2 border-2 border-amber-50 cursor-pointer hover:bg-cyan-400 hover:text-black'>See My Work   </button></NavLink>
 
- <button className='w-30 sm:w-fit text-[13px] sm:text-[14px] p-3 border-2 border-amber-50 cursor-pointer hover:bg-cyan-400 hover:text-black'> <a href={pdf}  target="_blank">Download CV</a>
+ <button className=' w-30 capitalize  sm:w-fit text-[13px] sm:text-[14px] px-3 py-2 border-2 border-amber-50 cursor-pointer hover:bg-cyan-400 hover:text-black'> <a href={pdf}  target="_blank">Download CV</a>
 </button>
    </div>
     </div>
@@ -109,10 +112,11 @@ const Project = () => {
     <div className='mx-5 text-black'>
 <h4 className=' text-cyan-300  text-[17px] sm:text-3xl md:text-4xl font-extrabold font-sans'>About Me</h4>
 
-<h3 className='text-white text-[16px] sm:text-2xl py-4 capitalize font-medium font-sans'>I am Full stack developer</h3>
+<h3 className='text-white text-[16px] sm:text-2xl py-3 capitalize font-medium font-sans'>I am Full stack developer</h3>
 
-<p className=' text-gray-300 leading-5 sm:leading-10 text-sm sm:text-[20px] lg:text-2xl  capitalize '>I'm a passionate full-stack developer with over 5 years of experience creating digital solutions for businesses around the world. My journey started with basic HTML/CSS websites and has evolved into building complex web applications with modern frameworks..</p>
-  <button className='bg-cyan-600 mt-7  w-30 sm:w-40 text-[13px] sm:text-[16px] mx-3 my-2 border-2 cursor-pointer capitalize hover:bg-cyan-400 hover:text-black'> <a href={pdf}  target="_blank">CONTACT US </a>
+<p className=' text-gray-300 leading-5 sm:leading-10 text-sm sm:text-[20px] lg:text-2xl  capitalize '>I’m a passionate FullStack Developer built Website and learn modern web technologies. I enjoy building responsive, user-friendly web applications and continuously learning about new frameworks and design patterns Looking forward to contributing to dynamic software teams.
+</p>
+  <button className='bg-cyan-600 mt-7  w-30 sm:w-40 text-[13px] sm:text-[16px] mx-3 my-2 border-2 cursor-pointer capitalize hover:bg-cyan-400 hover:text-black'> <a href={"#Contact"}  >CONTACT US </a>
 </button>
  
  
@@ -222,7 +226,7 @@ const Project = () => {
  */}
 
 
-<section id="Skills" className="bg-gray-800 w-full min-h-screen flex flex-col justify-center overflow-hidden px-6 py-14">
+<section id="Skills" className="bg-gray-800 w-full min-h-screen flex flex-col justify-center overflow-hidden px-6 py-16">
 <motion.div
   initial={{ y: -40, opacity: 0 }}    // smaller movement = faster
   whileInView={{ y: 0, opacity: 1 }}
@@ -341,7 +345,7 @@ const Project = () => {
 
 
   <Register/> 
-
+<Footer/>
     </div>
   )
 }

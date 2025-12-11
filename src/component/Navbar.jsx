@@ -28,7 +28,7 @@ function Navbar() {
               textDecoration: "none",
             })}
           >
-            Portfolio
+           Abdullah Furqan
           </NavLink>
         </h1>
 
