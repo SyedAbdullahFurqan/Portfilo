@@ -4,17 +4,12 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Navbar from './component/Navbar' 
 import { createBrowserRouter , RouterProvider } from "react-router-dom";
-  import About from './component/About'
-// import Contact from './component/Contact'
-import Home from './component/Home'
-import Sample from './component/Sample'
-import Nested from './component/Nested'
-import { Register } from './component/Register'
+
 
 // import Login from './component/Login'
 // import { Logout } from './component/Logout';
 import Project from './component/Project';
-import {Myself} from './component/Myself';
+
 
 function App() {
 
@@ -25,23 +20,12 @@ const router= createBrowserRouter([
      element: <> <Navbar />  <Project/> </> 
       },  
   
-   {path:"/Skill",
-
-     element: <> <Navbar /> <Home/>  </> 
-      },
+ 
 
 
-  {path:"/Self",
-
-     element: <> <Navbar /> <Myself/>  </> 
-      },
+  
 
 
-{path:"/Contact",
-
-
-element: <> <Navbar /> <Register/>  </> 
-},
 
       
 ])

@@ -1,78 +1,107 @@
 import React, { useState } from 'react'
 import {Link, NavLink} from 'react-router-dom'
+import { FiMenu, FiX } from "react-icons/fi";
 
 function Navbar() {
 
-    const [Change, setChange] = useState("");
+  
+  const [open, setOpen] = useState(false);
 
-console.log(Change)
+  const handleToggle = () => setOpen(!open);
+  const closeMenu = () => setOpen(false);
 
 
-const [file, setImges] = useState("");
-const [True, setTrue] = useState(true);
-function fileImage(e) {
-  const values=      e.target.files[0]
-setImges(values)
-setTrue(false)
-}
-console.log(file==true )
-
-console.log(file)
 
   return (
     < >
 
 
-        <div className='w-full'> 
-        <nav className=' w-full flex items-center justify-around bg-gray-700  fixed top-0 left-0 z-50 '>
-            <div>
+<div className="w-full">
+      <nav className="w-full flex items-center justify-between bg-gray-700 px-6 py-4 fixed top-0 left-0 z-30">
 
-                <h1 className=''>    <NavLink  to={"/"}   style={({isActive})=>{
+        {/* Logo */}
+        <h1 className="text-white text-xl font-semibold">
+          <NavLink
+            to={"/"}
+            style={({ isActive }) => ({
+              color: isActive ? "white" : "lightblue",
+              textDecoration: "none",
+            })}
+          >
+            Portfolio
+          </NavLink>
+        </h1>
 
-return{color:isActive ?"white":"Lightblue",textDecoration:"none"}
-        } } >Portfolio</NavLink></h1>
-          </div>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex text-[14px] sm:text-[18px] gap-8">
+          <li>
+            <a href="#Home" className="pb-1 border-b-2 border-transparent hover:border-blue-300 transition-all text-cyan-400 hover:text-cyan-300">
+              Home
+            </a>
+          </li>
 
-    <ul className='text-[13px] sm:text-[20px] flex gap-3 mx-5 py-3 '>
+          <li>
+            <a href="#About" className="pb-1 border-b-2 border-transparent hover:border-blue-300 transition-all text-cyan-400 hover:text-cyan-300">
+              About
+            </a>
+          </li>
 
-       <li> 
-    <NavLink  to={"/"}   style={({isActive})=>{
+          <li>
+            <a href="#Skills" className="pb-1 border-b-2 border-transparent hover:border-blue-300 transition-all text-cyan-400 hover:text-cyan-300">
+              Skills
+            </a>
+          </li>
 
-return{color:isActive ?"white":"Lightblue",textDecoration:"none"}
-        } } >Home</NavLink>
-        </li>
-{/* <input type="file" name="" id="" value={Change}  onChange={(e)=>setChange(e.target.value)} />
-  
-  <img src="bags.jpg" alt="" /> */}
-    <li>
-       <NavLink to={"/Skill"}  style={({isActive})=>{
+          <li>
+            <a href="#Project" className="pb-1 border-b-2 border-transparent hover:border-blue-300 transition-all text-cyan-400 hover:text-cyan-300">
+              Project
+            </a>
+          </li>
 
-return{color:isActive ?"white":"Lightblue",textDecoration:"none"}
-        } }>Projects</NavLink >
-        </li>
+          <li>
+            <a href="#Contact" className="pb-1 border-b-2 border-transparent hover:border-blue-300 transition-all text-cyan-400 hover:text-cyan-300">
+              Contact
+            </a>
+          </li>
+        </ul>
 
-   
+        {/* Hamburger Icon (Mobile) */}
+        <div className="md:hidden text-white text-3xl cursor-pointer" onClick={handleToggle}>
+          {open ? <FiX /> : <FiMenu />}
+        </div>
+      </nav>
 
-   <li>
-         <NavLink to={"/Self" }      style={({isActive})=>{
-
-return{color:isActive ?"white":"Lightblue",textDecoration:"none"}
-        } }  >ABOUTS</NavLink>   
-
-        </li>
-
-
-        
- <li>
-            <NavLink to={"/Contact"} style={({isActive})=>{
-
-return{color:isActive ?"white":"Lightblue",textDecoration:"none"}
-        } } >Contact  </NavLink> 
-        </li>
-
+      {/* Mobile Menu */}
+    <div
+  className={`md:hidden bg-gray-800 fixed top-16 left-0 w-full h-full transition-all duration-300 z-[999] shadow-xl ${
+    open ? "translate-x-0" : "translate-x-full"
+  }`}
+>
+        <ul className="flex flex-col gap-6 p-6 text-lg">
+          <li>
+            <a href="#Home" onClick={closeMenu} className="text-cyan-300 hover:text-white">Home</a>
+          </li>
+          <li>
+            <a href="#About" onClick={closeMenu} className="text-cyan-300 hover:text-white">About</a>
+          </li>
+          <li>
+            <a href="#Skills" onClick={closeMenu} className="text-cyan-300 hover:text-white">Skills</a>
+          </li>
+          <li>
+            <a href="#Project" onClick={closeMenu} className="text-cyan-300 hover:text-white">Project</a>
+          </li>
+          <li>
+            <a href="#Contact" onClick={closeMenu} className="text-cyan-300 hover:text-white">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 {/* {isLogin ? 
 (
+ style={({isActive})=>{
 
+return{color:isActive ?"white":"Lightblue",textDecoration:"none"}
+        } }
     <>
     
    
@@ -114,10 +143,7 @@ return{color:isActive ?"white":"Lightblue",textDecoration:"none"}
   
   )} */}
 
-    </ul>
- 
-</nav>
-        </div>
+  
     </>
   )
 }
